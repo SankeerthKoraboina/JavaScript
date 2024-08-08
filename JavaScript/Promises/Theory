@@ -1,0 +1,18 @@
+A callback is a function passed as an argument to another function, which is then executed after some operation has completed.
+Usage: Commonly used in asynchronous operations like reading files, making network requests, or interacting with databases.
+
+Drawbacks:
+Callback Hell: When multiple asynchronous operations are nested within each other, it leads to deeply nested code that is difficult to read and maintain.
+Error Handling: Managing errors across multiple asynchronous operations can be cumbersome with callbacks.
+
+
+Promises
+Definition: A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+Usage: Used to avoid callback hell and make asynchronous code easier to read and maintain.
+Advantages:
+Chaining: Promises can be chained using .then(), making the code more linear and readable.
+Error Handling: Errors can be handled more elegantly with .catch().
+
+Callbacks in Promises: Promises use callbacks internally. The functions passed to resolve and reject in the Promise constructor are callbacks.
+Transition: Many APIs that initially used callbacks (such as Node.js core modules) have been updated or supplemented with promise-based versions (like the fs.promises API).

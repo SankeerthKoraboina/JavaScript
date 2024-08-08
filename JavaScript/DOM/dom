@@ -1,0 +1,26 @@
+/*
+Window --> document --> Html Elements
+
+tree structure , each is an object
+
+
+html and css are static in nature.
+For instance,to change the theme (dark mode , light mode) the css files cannot be modified
+So,it is done dynamically at runtime through javascript using dom
+
+Dynamic Changes are done with js and cannot be donw with html,css
+Dynamic Changes or manipulation include changing content,background,etc
+
+
+Go to console --> type window --> document >> and edit
+
+ex--> document.body.style.backgroundcolor="green"
+
+
+
+
+
+
+
+
+*/

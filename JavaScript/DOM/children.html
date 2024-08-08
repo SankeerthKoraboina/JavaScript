@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+    DOM represents html elements in the form of objects
+    document.title="DOM"
+    document.head.style.color="blue"
+    document.body.document.head
+    document.body.parentElement -> html
+    document.body.previousElementSibling
+    document.body.nextElementSibling
+
+    childNodes = [text nodes comment nodes element nodes ]
+    children = [element Nodes]
+
+
+    document.body.childNodes
+    document.body.children[container,script]
+    
+     document.body.firstElementChild = container
+     document.body.children[0] = container
+
+
+     document.body.firstElementChild.childNodes [text nodes comment nodes element nodes ]
+    document.body.firstElementChild.children[box 1 to 5]
+    document.body.children[0].children[same box 1 to 5]
+    document.body.firstElementChild.firstElementChild
+    document.body.firstElementChild.lastElementChild
+
+    
+    child Nodes= text nodes,comment nodes ,element nodes (children)
+-->
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Children</title>
+    <style>
+        .box {
+            border: 10px solid black;
+            margin: 5px;
+            padding: 20px;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+
+    <script src="DomChildParent.js"></script>
+
+</body>
+
+</html>
